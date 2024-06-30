@@ -7,6 +7,12 @@ edition = "2021"
 solana-program = "1.18.17"
 borsh = "0.10.3"
 borsh-derive = "0.10.3"
+solana-client = "1.18.17"
+solana-sdk = "1.18.17"
 
 [lib]
 crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
